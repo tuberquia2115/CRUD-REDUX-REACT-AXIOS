@@ -1,57 +1,11 @@
 {
   "productos": [
     {
-      "id": 1,
-      "nombre": "Jugo de Zanahoria",
-      "precio": "31111"
-    },
-    {
-      "id": 2,
-      "nombre": "Jugo de Naranja",
-      "precio": "1"
-    },
-    {
-      "nombre": "Jugo de Naranja",
-      "precio": "300",
-      "id": 3
-    },
-    {
-      "nombre": "Rib Eye 800g",
-      "precio": "200",
-      "id": 4
-    },
-    {
-      "nombre": "Jugo de Fresa",
-      "precio": "200",
-      "id": 5
-    },
-    {
-      "nombre": "tomate",
-      "precio": "500",
-      "cantidad": "20",
-      "tipoProducto": "Frutas",
-      "id": 6
-    },
-    {
-      "nombre": "tomate",
-      "precio": "500",
-      "cantidad": "20",
-      "tipoProducto": "Frutas",
-      "id": 7
-    },
-    {
-      "nombre": "Tomate",
-      "precio": "1000",
-      "cantidad": "14",
-      "tipoProducto": "Frutas",
-      "id": 8
-    },
-    {
-      "nombre": "Dairon Tuberquia",
-      "precio": "155",
-      "cantidad": "2154",
+      "nombre": "Cebolla",
+      "precio": "5000",
+      "cantidad": "10",
       "tipoProducto": "Víveres",
-      "id": 9
+      "id": 13
     }
   ]
 }
