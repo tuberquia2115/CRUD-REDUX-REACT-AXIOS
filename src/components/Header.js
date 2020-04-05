@@ -14,7 +14,7 @@ const Header = () => {
             </div>
 
 
-            <Link
+            <Link style={{ maxWidth: '100%', width: '20rem' }}
                 to={"/productos/nuevo"}
                 className="btn btn-danger nuevo-post d-block d-md-inline-block"
             >Agregar Producto &#43;</Link>

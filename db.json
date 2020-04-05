@@ -8,13 +8,6 @@
       "id": 13
     },
     {
-      "nombre": "tomate",
-      "precio": "10000",
-      "cantidad": "1000",
-      "tipoProducto": "Frutas",
-      "id": 14
-    },
-    {
       "nombre": "Papitas",
       "precio": "2000",
       "cantidad": "5",
@@ -27,6 +20,20 @@
       "cantidad": "1",
       "tipoProducto": "Frutas",
       "id": 16
+    },
+    {
+      "nombre": "Panela",
+      "precio": "1900",
+      "cantidad": "2",
+      "tipoProducto": "Víveres",
+      "id": 17
+    },
+    {
+      "nombre": "Ricostilla",
+      "precio": "400",
+      "cantidad": "3",
+      "tipoProducto": "Víveres",
+      "id": 18
     }
   ]
 }
