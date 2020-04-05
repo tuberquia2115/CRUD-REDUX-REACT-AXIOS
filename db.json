@@ -1,15 +1,15 @@
 {
   "productos": [
     {
-      "nombre": "Cebolla",
+      "nombre": "Cebolla blanca",
       "precio": "5000",
       "cantidad": "10",
-      "tipoProducto": "Víveres",
+      "tipoProducto": "Frutas",
       "id": 13
     },
     {
       "nombre": "tomate",
-      "precio": "5000",
+      "precio": "10000",
       "cantidad": "1000",
       "tipoProducto": "Frutas",
       "id": 14
