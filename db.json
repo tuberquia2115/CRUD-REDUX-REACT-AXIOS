@@ -20,6 +20,13 @@
       "cantidad": "5",
       "tipoProducto": "Víveres",
       "id": 15
+    },
+    {
+      "nombre": "Salsa de Tomate",
+      "precio": "1000",
+      "cantidad": "1",
+      "tipoProducto": "Frutas",
+      "id": 16
     }
   ]
 }
