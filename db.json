@@ -6,6 +6,20 @@
       "cantidad": "10",
       "tipoProducto": "Víveres",
       "id": 13
+    },
+    {
+      "nombre": "tomate",
+      "precio": "5000",
+      "cantidad": "1000",
+      "tipoProducto": "Frutas",
+      "id": 14
+    },
+    {
+      "nombre": "Papitas",
+      "precio": "2000",
+      "cantidad": "5",
+      "tipoProducto": "Víveres",
+      "id": 15
     }
   ]
 }
