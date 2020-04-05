@@ -1,21 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { editarProductoAction } from '../actions/productoActions';
 
 const EditarProducto = () => {
 
-    // producto a editar
-    const producto = useSelector(state => state.productos.productoeditar)
-    const dispatch = useDispatch()
+    // nuevo producto editar
+    const [producto, guardarProducto] = useState({
+        nombre: '',
+        precio: '',
+        cantidad: '',
+        tipoProducto: ''
+    })
 
-    if (producto) return null;
+    // producto a editar
+    const productoEditar = useSelector(state => state.productos.productoeditar)
+
+
     const { nombre, precio, cantidad, tipoProducto } = producto
+
+    useEffect(() => {
+        guardarProducto(productoEditar);
+    }, [productoEditar])
+
+    // leer  los datos del formulario
+
+    const onChangeFormulario = e => {
+        guardarProducto({
+            ...producto, [e.target.name]: e.target.value
+        })
+    }
+
 
     const submitEditarProducto = (e) => {
         e.preventDefault();
-
-        dispatch(editarProductoAction())
-
+        editarProductoAction();
     }
 
 
@@ -36,6 +54,7 @@ const EditarProducto = () => {
                                     placeholder="Nombre producto"
                                     name="nombre"
                                     value={nombre}
+                                    onChange={onChangeFormulario}
                                 />
                             </div>
                             <div className="form-group">
@@ -46,6 +65,7 @@ const EditarProducto = () => {
                                     placeholder="Precio producto"
                                     name="precio"
                                     value={precio}
+                                    onChange={onChangeFormulario}
                                 />
                             </div>
                             <div className="form-group">
@@ -56,11 +76,17 @@ const EditarProducto = () => {
                                     placeholder="Cantidad"
                                     name="cantidad"
                                     value={cantidad}
+                                    onChange={onChangeFormulario}
                                 />
                             </div>
                             <div className="form-group">
                                 <label>Tipo de Producto</label>
-                                <select value={tipoProducto} name="tipoProducto" className="form-control">
+                                <select
+                                    value={tipoProducto}
+                                    name="tipoProducto"
+                                    className="form-control"
+                                    onChange={onChangeFormulario}
+                                >
                                     <option value="">--Seleccione un tipo de producto</option>
                                     <option value="Frutas">Frutas</option>
                                     <option value="Víveres">Víveres</option>
